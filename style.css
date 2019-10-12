@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap');
+
 .wrapper {
   display: flex;
 }
@@ -6,7 +8,31 @@
   flex-direction: row;
   margin-right: 30px;
 }
+
 main {
-  display: block;
-  margin: 0 auto;
+  padding: 50px;
+  background-color: #1b1a3e;
+}
+
+body {
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+  text-align: center;
+  padding-bottom: 30px;
+  margin-top: 0;
+}
+
+.inventory {
+  font-weight: 600;
+  border-bottom: 1px solid;
+}
+
+img {
+  background: #fafafa;
+  padding: 20px;
+  width: 100px;
+  cursor: pointer;
 }

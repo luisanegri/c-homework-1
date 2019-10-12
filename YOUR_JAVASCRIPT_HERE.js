@@ -1,5 +1,5 @@
 let hero = {
-  name: 'Lu',
+  name: 'Luisa',
   heroic: true,
   inventory: [],
   health: 10,
@@ -10,7 +10,6 @@ let hero = {
 };
 
 function rest(person) {
-  document.getElementById('health-stats').innerHTML = person.health;
   document.getElementById('inn').addEventListener('click', function() {
     if (person.health === 10) {
       alert('You are 100% healthy!');
@@ -18,7 +17,7 @@ function rest(person) {
       person.health = 10;
       //  Option2: Object.assign(person, { health: 10 });
     }
-    document.getElementById('health-stats').innerHTML = person.health;
+    document.getElementById('health').innerHTML = person.health;
   });
 
   return person;
@@ -35,3 +34,10 @@ function pickUpItem(person, weapon) {
 }
 
 pickUpItem(hero);
+
+function changeHeroName() {
+  const person = prompt('Please enter your Hero Name', '');
+  if (person != null) {
+    document.getElementById('hero-name').innerHTML = person;
+  }
+}

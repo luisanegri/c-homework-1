@@ -1,0 +1,12 @@
+.wrapper {
+  display: flex;
+}
+
+.item {
+  flex-direction: row;
+  margin-right: 30px;
+}
+main {
+  display: block;
+  margin: 0 auto;
+}

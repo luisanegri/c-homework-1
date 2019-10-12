@@ -12,23 +12,29 @@
 
   <!-- 👍 YOUR HTML HERE 👍 -->
   <main>
+    <h1>Hero Game</h1>
     <div class="wrapper">
       <div class="item">
         <img id="inn" src="https://via.placeholder.com/150" alt="">
-        <p>Your current health status is: <span id="health-stats"></span></p>
+
       </div>
 
       <div class="item">
         <img id="dagger" src="https://via.placeholder.com/150" alt="">
-        <h2>Inventory:</h2>
-        <p>Weapon: <span id="weapon"></span></p>
-        <p>Damage: <span id="damage"></span></p>
+
+
       </div>
 
       <div class="item">
         <img id="bag" src="https://via.placeholder.com/150" alt="">
       </div>
     </div>
+    <p>Name: <span id="hero-name"></span></p> <button id="change-name" onclick="changeHeroName()">Add name</button>
+    <p>Health: <span id="health"></span></p>
+    <p>Heroic: <span id="heroic"></span></p>
+    <span class="inventory">Inventory</span>
+    <p>Weapon: <span id="weapon"></span></p>
+    <p>Damage: <span id="damage"></span></p>
   </main>
 
 

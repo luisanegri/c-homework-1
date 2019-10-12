@@ -4,18 +4,30 @@
   <meta charset="utf-8">
   <title>Mocha Tests</title>
   <link href="lib/mocha.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
 
   <!-- 👍 YOUR HTML HERE 👍 -->
-  <img id="inn" src="https://via.placeholder.com/150" alt="">
-  <p>Your current health status is: <span id="health-stats"></span></p>
+  <main>
+    <div class="wrapper">
+      <div class="item">
+        <img id="inn" src="https://via.placeholder.com/150" alt="">
+        <p>Your current health status is: <span id="health-stats"></span></p>
+      </div>
 
-  <img id="dagger" src="https://via.placeholder.com/150" alt="">
+      <div class="item">
+        <img id="dagger" src="https://via.placeholder.com/150" alt="">
+        <p>Weapon: <span id="current-weapon"></span></p>
+      </div>
 
-  <img id="bag" src="https://via.placeholder.com/150" alt="">
+      <div class="item">
+        <img id="bag" src="https://via.placeholder.com/150" alt="">
+      </div>
+    </div>
+  </main>
 
 
   <!-- I RECOMMEND YOU LEAVE THE REST UNTOUCHED -->

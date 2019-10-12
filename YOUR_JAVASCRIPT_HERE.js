@@ -4,7 +4,7 @@ let hero = {
   inventory: [],
   health: 10,
   weapon: {
-    type: 'riffle',
+    type: 'dagger',
     damage: 2
   }
 };
@@ -25,3 +25,13 @@ function rest(person) {
 }
 
 rest(hero);
+
+function pickUpItem(person, weapon) {
+  document.getElementById('dagger').addEventListener('click', function() {
+    Object.assign(person.inventory, {
+      weapon: [{ type: 'dagger' }, { damage: 2 }]
+    });
+  });
+}
+
+pickUpItem(hero);

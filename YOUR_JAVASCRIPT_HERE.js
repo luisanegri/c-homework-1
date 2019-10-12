@@ -26,10 +26,13 @@ rest(hero);
 
 function pickUpItem(person, weapon) {
   document.getElementById('dagger').addEventListener('click', function() {
-    // not being able to print on screen however when using console.log it shows there
-    Object.assign(person.inventory, {
-      weapon: [{ type: 'dagger' }, { damage: 2 }]
-    });
+    let newWeapon = {
+      type: 'knife',
+      damage: 3
+    };
+    person.inventory.push(newWeapon);
+    // console.log(person.inventory.weapon);
+    console.log(JSON.stringify(person));
   });
 }
 
